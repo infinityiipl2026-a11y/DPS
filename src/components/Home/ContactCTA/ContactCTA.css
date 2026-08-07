@@ -1,0 +1,55 @@
+/* ==========================================
+   CONTACT CTA
+========================================== */
+
+.contact-cta {
+  padding: 90px 0;
+  background: linear-gradient(120deg, var(--secondary-color, var(--secondary-color)), var(--primary-color, var(--primary-color)));
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+.contact-cta h2 {
+  font-size: 38px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.contact-cta p {
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto 34px;
+  line-height: 1.7;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-cta .btn-outline.outline-light {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-cta .btn-outline.outline-light:hover {
+  border-color: #fff;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+  .contact-cta h2 {
+    font-size: 28px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

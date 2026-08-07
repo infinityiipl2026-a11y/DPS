@@ -1,0 +1,376 @@
+/* ==========================================
+   OUR SOLUTIONS
+========================================== */
+
+.solutions{
+
+    padding:100px 0;
+
+    background:var(--light-bg);
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1350px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title span{
+
+    color:var(--accent-color);
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    color:var(--primary-color);
+
+    margin:15px 0;
+
+    font-weight:700;
+
+}
+
+.section-title p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--light-text);
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.solutions-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.solution-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
+.solution-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.15);
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.solution-image{
+
+    height:300px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:30px;
+
+    background:#fff;
+
+}
+
+.solution-image img{
+
+    max-width:100%;
+
+    max-height:240px;
+
+    width:auto;
+
+    height:auto;
+
+    object-fit:contain;
+
+    transition:.4s;
+
+}
+
+.solution-card:hover .solution-image img{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+.solution-content{
+
+    padding:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+.solution-content h3{
+
+    color:var(--primary-color);
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+.solution-content p{
+
+    color:var(--light-text);
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.solution-content ul{
+
+    list-style:none;
+
+    margin-bottom:35px;
+
+}
+
+.solution-content li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:15px;
+
+    color:var(--text-color);
+
+    font-size:16px;
+
+}
+
+.solution-content li svg{
+
+    color:var(--secondary-color);
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.solution-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--secondary-color);
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+     margin-top:auto;
+
+}
+
+.solution-content a svg{
+
+    transition:.3s;
+
+}
+
+.solution-content a:hover{
+
+    color:var(--accent-color);
+
+}
+
+.solution-content a:hover svg{
+
+    transform:translateX(8px);
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:991px){
+
+.solutions{
+
+padding:80px 0;
+
+}
+
+.solutions-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.section-title h2{
+
+font-size:36px;
+
+}
+
+.solution-image img{
+
+max-width:300px;
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.solutions{
+
+padding:70px 0;
+
+}
+
+.section-title{
+
+margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+font-size:30px;
+
+}
+
+.section-title p{
+
+font-size:16px;
+
+padding:0 10px;
+
+}
+
+.solution-content{
+
+padding:25px;
+
+}
+
+.solution-content h3{
+
+font-size:24px;
+
+}
+
+.solution-content p{
+
+font-size:15px;
+
+}
+
+.solution-content li{
+
+font-size:15px;
+
+}
+
+.solution-image{
+
+padding:25px;
+
+}
+
+.solution-image img{
+
+max-width:240px;
+
+}
+
+.solution-content a{
+
+font-size:15px;
+
+}
+
+}

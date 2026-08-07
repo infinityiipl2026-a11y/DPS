@@ -1,0 +1,143 @@
+/* =====================================
+   HERO SLIDER
+===================================== */
+
+.hero-slider{
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    line-height:0;
+}
+
+.hero-slider .swiper{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.hero-slider .swiper-wrapper{
+    margin:0;
+    padding:0;
+}
+
+.hero-slider .swiper-slide{
+    margin:0;
+    padding:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-slider img{
+    display:block;
+
+    width:100%;
+    height:auto;
+
+    vertical-align:middle;
+}
+
+/* =====================================
+   PAGINATION
+===================================== */
+
+.swiper-pagination{
+    bottom:18px !important;
+}
+
+.swiper-pagination-bullet{
+
+    width:10px;
+    height:10px;
+
+    background:#ffffff;
+
+    opacity:.45;
+
+    transition:.3s;
+
+}
+
+.swiper-pagination-bullet-active{
+
+    width:28px;
+
+    border-radius:30px;
+
+    background:var(--secondary-color);
+
+    opacity:1;
+
+}
+
+/* =====================================
+   DESKTOP
+===================================== */
+
+@media(min-width:992px){
+
+.hero-slider img{
+
+    width:100%;
+    height:auto;
+
+}
+
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media(max-width:991px){
+
+.hero-slider img{
+
+    width:100%;
+    height:auto;
+
+}
+
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media(max-width:768px){
+
+.hero-slider{
+
+    margin-top:0;
+
+}
+
+.hero-slider img{
+
+    width:100%;
+    height:auto;
+
+}
+
+.swiper-pagination{
+
+    bottom:10px !important;
+
+}
+
+.swiper-pagination-bullet{
+
+    width:8px;
+    height:8px;
+
+}
+
+.swiper-pagination-bullet-active{
+
+    width:22px;
+
+}
+
+}

@@ -1,0 +1,99 @@
+.page-hero {
+  background: linear-gradient(120deg, var(--primary-color, var(--primary-color)), var(--secondary-color, var(--secondary-color)));
+  padding: 140px 0 80px;
+  text-align: center;
+}
+
+.page-hero .eyebrow {
+  color: var(--accent-color, var(--accent-color));
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.page-hero h1 {
+  color: #fff;
+  font-size: 42px;
+  margin: 16px 0;
+}
+
+.page-hero p {
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.brand-section {
+  padding: var(--section-padding, 100px) 0;
+  scroll-margin-top: 100px;
+}
+
+.brand-section.alt-bg {
+  background: var(--light-bg, var(--light-bg));
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.brand-logo-box {
+  background: #fff;
+  border-radius: var(--radius-lg, 16px);
+  box-shadow: var(--shadow-md, 0 8px 20px rgba(0, 0, 0, 0.12));
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo-box img {
+  max-width: 100%;
+}
+
+.brand-content p {
+  color: var(--text-color, var(--text-color));
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.brand-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tag {
+  background: rgba(23, 62, 146, 0.08);
+  color: var(--secondary-color, var(--secondary-color));
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.brand-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+  .brand-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-hero h1 {
+    font-size: 28px;
+  }
+
+  .brand-logo-box {
+    padding: 40px;
+  }
+}

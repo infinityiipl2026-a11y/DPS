@@ -1,0 +1,61 @@
+/* ==========================================
+   STATISTICS
+========================================== */
+
+.statistics {
+  padding: 80px 0;
+  background: var(--primary-color, var(--primary-color));
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #fff;
+  display: inline-flex;
+}
+
+.stat-item h3 span {
+  color: var(--accent-color, var(--accent-color));
+}
+
+.stat-item p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.stat-item + .stat-item {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+  .stat-item:nth-child(2n + 1) {
+    border-left: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .stat-item {
+    border-left: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-item h3 {
+    font-size: 36px;
+  }
+}

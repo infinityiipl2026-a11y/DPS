@@ -1,0 +1,32 @@
+.not-found {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.not-found-code {
+  font-size: 100px;
+  font-weight: 800;
+  color: var(--secondary-color, var(--secondary-color));
+  line-height: 1;
+}
+
+.not-found h1 {
+  font-size: 30px;
+  color: var(--heading-color, var(--primary-color));
+  margin: 20px 0 12px;
+}
+
+.not-found p {
+  color: var(--text-color, var(--text-color));
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  .not-found-code {
+    font-size: 70px;
+  }
+}

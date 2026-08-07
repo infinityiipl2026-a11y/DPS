@@ -1,0 +1,266 @@
+/* ===========================
+GLOBAL NAVBAR
+=========================== */
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+.navbar-solid {
+  background: #ffffff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-transparent {
+  background: transparent;
+  box-shadow: none;
+  position: absolute;
+  width: 100%;
+}
+
+.navbar-transparent .logo h2,
+.navbar-transparent .nav-menu a,
+.navbar-transparent .phone-btn,
+.navbar-transparent .icon-btn {
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1350px;
+  margin: auto;
+}
+
+.navbar-container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===========================
+LOGO
+=========================== */
+
+.logo {
+  text-decoration: none;
+}
+
+.logo h2 {
+  font-size: 26px;
+  color: var(--primary-color);
+  font-weight: 700;
+  transition: color 0.35s ease;
+}
+
+/* ===========================
+MENU
+=========================== */
+
+.nav-menu {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-menu a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--accent-color, var(--accent-color));
+}
+
+.navbar-transparent .nav-menu a.active {
+  color: var(--accent-color, var(--accent-color));
+}
+
+/* ===========================
+RIGHT SIDE
+=========================== */
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-btn {
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.icon-btn:hover {
+  color: var(--accent-color, var(--accent-color));
+}
+
+.phone-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.quote-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent-color, var(--accent-color));
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 14.5px;
+  text-decoration: none;
+}
+
+.quote-btn:hover {
+  background: var(--secondary-color, var(--secondary-color));
+}
+
+.mobile-btn {
+  display: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.navbar-transparent .menu-icon {
+  color: #fff;
+}
+
+/* ===========================
+SEARCH BAR
+=========================== */
+
+.search-bar {
+  background: #fff;
+  border-top: 1px solid var(--border-color, var(--border-color));
+  padding: 16px 0;
+  animation: fadeDown 0.25s ease;
+}
+
+.search-bar form {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid var(--border-color, var(--border-color));
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.search-bar button {
+  padding: 0 20px;
+  background: var(--secondary-color, var(--secondary-color));
+  color: #fff;
+  border-radius: 8px;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+TABLET
+=========================== */
+
+@media (max-width: 991px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 25px 40px;
+    gap: 25px;
+    transition: 0.4s;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu a {
+    color: #222 !important;
+  }
+
+  .menu-icon {
+    display: block;
+    color: inherit;
+  }
+
+  .quote-btn {
+    display: none;
+  }
+
+  .mobile-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: var(--accent-color, var(--accent-color));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+/* ===========================
+MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+  .logo h2 {
+    font-size: 20px;
+  }
+
+  .phone-btn {
+    display: none;
+  }
+
+  .navbar-container {
+    height: 70px;
+  }
+
+  .search-bar form {
+    flex-direction: column;
+  }
+}
