@@ -37,7 +37,7 @@ function FeaturedMachines() {
                 <div className="machine-content">
                   <h3>{m.name}</h3>
                   <p>{m.description}</p>
-                  <Button to={`/products#${m.id}`} variant="ghost">
+                  <Button to={`/products?category=${m.categoryId}&sub=${m.subcategoryId}`} variant="ghost">
                     Know More →
                   </Button>
                 </div>

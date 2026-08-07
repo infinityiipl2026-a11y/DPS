@@ -1,5 +1,6 @@
 import "./MachineCategories.css";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import SectionTitle from "../../UI/SectionTitle/SectionTitle";
 import { machineCategories } from "../../../data/machines";
 
@@ -15,17 +16,21 @@ function MachineCategories() {
 
         <div className="categories-grid">
           {machineCategories.map((cat) => (
-            <div className="category-card" key={cat.id}>
+            <Link
+              to={`/products?category=${cat.categoryId}&sub=${cat.subcategoryId}`}
+              className="category-card"
+              key={cat.id}
+            >
               <div className="category-image">
                 <img src={cat.image} alt={cat.name} />
               </div>
               <div className="category-overlay">
                 <h3>{cat.name}</h3>
-                <button className="category-btn">
+                <span className="category-btn">
                   View Machines <FaArrowRight />
-                </button>
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

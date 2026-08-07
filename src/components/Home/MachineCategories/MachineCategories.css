@@ -15,6 +15,7 @@
 
 .category-card {
   position: relative;
+  display: block;
   border-radius: var(--radius-md, 10px);
   overflow: hidden;
   height: 260px;

@@ -63,15 +63,15 @@ function Footer() {
           <ul className="footer-contact">
             <li>
               <FaMapMarkerAlt />
-              <span>123 Industrial Avenue, Mumbai, Maharashtra, India</span>
+              <span>294, Perin Nariman Street, Haroon House, 1st Floor, Opp.RBI., Fort, Mumbai 400001. India</span>
             </li>
             <li>
               <FaPhoneAlt />
-              <a href="tel:+911234567890">+91 12345 67890</a>
+              <a href="tel:+91-22-40462288">+91-22-40462288</a>
             </li>
             <li>
               <FaEnvelope />
-              <a href="mailto:info@digitalprintsolutions.com">info@digitalprintsolutions.com</a>
+              <a href="mailto:info@digitalprintsolutions.net">info@digitalprintsolutions.net</a>
             </li>
           </ul>
 

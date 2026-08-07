@@ -1,4 +1,5 @@
 import "./OurSolutions.css";
+import { Link } from "react-router-dom";
 import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
 
 // Temporary images
@@ -68,13 +69,13 @@ function OurSolutions() {
 
             </ul>
 
-              <a href="/digital-printing-machines">
+              <Link to="/products?category=printing-machines">
 
                 Explore Machines
 
                 <FaArrowRight />
 
-              </a>
+              </Link>
 
             </div>
 
@@ -130,13 +131,13 @@ function OurSolutions() {
             </li>
 
             </ul>
-              <a href="/print-finishing-equipment">
+              <Link to="/products?category=finishing-equipment">
 
                 Explore Machines
 
                 <FaArrowRight />
 
-              </a>
+              </Link>
 
             </div>
 

@@ -52,17 +52,42 @@
   margin-top: 40px;
 }
 
+/* Leaves room for the sticky navbar (80px) when a section is scrolled to
+   via the ?category= / ?sub= links from the homepage, so the heading and
+   the +/- toggle never end up hidden underneath it. */
+.catalog-accordion-list [id] {
+  scroll-margin-top: 110px;
+}
+
 .catalog-main-item {
   background: #fff;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-xs);
+  box-shadow: var(--shadow-sm);
   overflow: hidden;
-  transition: box-shadow var(--transition);
+  transition: box-shadow var(--transition), border-color var(--transition);
+  position: relative;
+}
+
+.catalog-main-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--accent-color);
+  opacity: 0;
+  transition: opacity var(--transition);
 }
 
 .catalog-main-item.open {
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+
+.catalog-main-item.open::before {
+  opacity: 1;
 }
 
 .catalog-main-trigger,
@@ -80,7 +105,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 30px 32px;
+  padding: 32px 36px;
   color: var(--heading-color);
   transition: background var(--transition);
 }
@@ -92,9 +117,9 @@
 .catalog-main-trigger strong {
   font-family: var(--font-heading);
   display: block;
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   letter-spacing: -0.01em;
 }
 
@@ -102,16 +127,16 @@
 .accordion-trigger small {
   display: block;
   color: var(--text-color);
-  line-height: 1.6;
+  line-height: 1.65;
   font-size: 14.5px;
   font-weight: 400;
-  max-width: 640px;
+  max-width: 660px;
 }
 
 .catalog-main-icon {
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,18 +146,21 @@
   font-size: 22px;
   font-weight: 600;
   transition: var(--transition);
+  box-shadow: var(--shadow-xs);
 }
 
 .catalog-main-item.open .catalog-main-icon {
   background: var(--accent-color);
   color: #fff;
   transform: rotate(180deg);
+  box-shadow: var(--shadow-accent);
 }
 
 .catalog-main-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height var(--transition-slow);
+  background: var(--light-bg);
 }
 
 .catalog-main-content.active {
@@ -144,22 +172,41 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 22px 32px;
-  border-top: 1px solid var(--border-color);
+  padding: 24px 36px;
+  background: var(--light-bg);
   color: var(--heading-color);
+  position: relative;
+}
+
+.accordion-trigger::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 36px;
+  right: 36px;
+  height: 1px;
+  background: var(--border-color);
+}
+
+.catalog-main-content > div:first-child .accordion-trigger::before {
+  display: none;
 }
 
 .accordion-trigger strong {
   font-family: var(--font-heading);
   display: block;
-  font-size: 16.5px;
+  font-size: 17px;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .accordion-trigger svg {
   color: var(--secondary-color);
   flex-shrink: 0;
+}
+
+.product-accordion.open .accordion-trigger {
+  background: var(--light-bg-alt);
 }
 
 .accordion-content {
@@ -175,8 +222,8 @@
 .subcategory-products {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  padding: 4px 32px 32px;
+  gap: 28px;
+  padding: 28px 36px 40px;
   background: var(--light-bg);
 }
 
@@ -190,6 +237,7 @@
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
   display: flex;
   flex-direction: column;
+  box-shadow: var(--shadow-xs);
 }
 
 .product-card:hover {
@@ -201,17 +249,17 @@
 .product-card-image {
   position: relative;
   overflow: hidden;
-  background: var(--light-bg-alt);
+  background: linear-gradient(155deg, var(--light-bg-alt) 0%, #fff 100%);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .product-card-image img {
   width: 100%;
   height: 230px;
   object-fit: contain;
-  padding: 18px;
+  padding: 22px;
   display: block;
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-  background: #fff;
 }
 
 .product-card:hover .product-card-image img {
@@ -228,12 +276,13 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 5px 11px;
+  padding: 5px 12px;
   border-radius: 999px;
+  box-shadow: var(--shadow-xs);
 }
 
 .product-card-content {
-  padding: 22px 22px 24px;
+  padding: 24px 24px 26px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -247,9 +296,9 @@
   text-transform: uppercase;
   color: var(--accent-color-deep);
   background: rgba(201, 117, 42, 0.1);
-  padding: 4px 10px;
+  padding: 5px 11px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   align-self: flex-start;
 }
 
@@ -264,16 +313,18 @@
   color: var(--text-color);
   line-height: 1.7;
   font-size: 14px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .product-card-content ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 18px;
+  margin: 0 0 20px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 9px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
 }
 
 .product-card-content li {

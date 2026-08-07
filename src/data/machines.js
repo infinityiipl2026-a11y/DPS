@@ -22,41 +22,57 @@ export const machineCategories = [
     id: "printing-machines",
     name: "Printing Machines",
     image: digitalPrinting,
+    categoryId: "printing-machines",
+    subcategoryId: "dpm-series",
   },
   {
     id: "digital-label-printers",
     name: "Digital Label Printers",
     image: labelPrinting,
+    categoryId: "printing-machines",
+    subcategoryId: "digital-label-printer-series",
   },
   {
     id: "plate-making-equipment",
     name: "Plate Making Equipment",
     image: plateMaking,
+    categoryId: "printing-machines",
+    subcategoryId: "plate-making-equipment",
   },
   {
     id: "paper-creasing",
     name: "Paper Creasing Machines",
     image: paperCreasing,
+    categoryId: "finishing-equipment",
+    subcategoryId: "paper-creasing-machines",
   },
   {
     id: "guillotines",
     name: "Guillotines",
     image: guillotine,
+    categoryId: "finishing-equipment",
+    subcategoryId: "guillotines",
   },
   {
     id: "perfect-binders",
     name: "Perfect Binders",
     image: perfectBinder,
+    categoryId: "finishing-equipment",
+    subcategoryId: "perfect-binders",
   },
   {
     id: "laminators",
     name: "Laminators",
     image: laminator,
+    categoryId: "finishing-equipment",
+    subcategoryId: "laminators",
   },
   {
     id: "label-cutters",
     name: "Label Cutters",
     image: labelCutter,
+    categoryId: "finishing-equipment",
+    subcategoryId: "label-cutters",
   },
 ];
 
@@ -109,6 +125,8 @@ export const featuredMachines = [
     description:
       "Industrial digital printing machines designed for commercial and production printing applications.",
     image: digitalPrinting,
+    categoryId: "printing-machines",
+    subcategoryId: "dpm-series",
   },
 
   {
@@ -119,6 +137,8 @@ export const featuredMachines = [
     description:
       "Professional digital label printing systems for high-quality labels and flexible packaging.",
     image: labelPrinting,
+    categoryId: "printing-machines",
+    subcategoryId: "digital-label-printer-series",
   },
 
   {
@@ -129,6 +149,8 @@ export const featuredMachines = [
     description:
       "Advanced CTP and plate making equipment for precision prepress production.",
     image: plateMaking,
+    categoryId: "printing-machines",
+    subcategoryId: "plate-making-equipment",
   },
 
   {
@@ -139,6 +161,8 @@ export const featuredMachines = [
     description:
       "High-precision paper creasing machines for commercial printing and packaging applications.",
     image: paperCreasing,
+    categoryId: "finishing-equipment",
+    subcategoryId: "paper-creasing-machines",
   },
 
   {
@@ -149,6 +173,8 @@ export const featuredMachines = [
     description:
       "Heavy-duty guillotines delivering accurate and efficient paper cutting.",
     image: guillotine,
+    categoryId: "finishing-equipment",
+    subcategoryId: "guillotines",
   },
 
   {
@@ -159,6 +185,8 @@ export const featuredMachines = [
     description:
       "Professional perfect binding systems for books, manuals and catalogues.",
     image: perfectBinder,
+    categoryId: "finishing-equipment",
+    subcategoryId: "perfect-binders",
   },
 
   {
@@ -169,6 +197,8 @@ export const featuredMachines = [
     description:
       "Automatic laminating machines providing premium print finishing and protection.",
     image: laminator,
+    categoryId: "finishing-equipment",
+    subcategoryId: "laminators",
   },
 
   {
@@ -179,5 +209,7 @@ export const featuredMachines = [
     description:
       "Precision label cutting solutions for professional label production.",
     image: labelCutter,
+    categoryId: "finishing-equipment",
+    subcategoryId: "label-cutters",
   },
 ];

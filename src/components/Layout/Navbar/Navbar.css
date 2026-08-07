@@ -86,6 +86,112 @@ MENU
 }
 
 /* ===========================
+PRODUCTS MEGA MENU
+=========================== */
+
+.nav-item-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-trigger {
+  display: flex !important;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-dropdown-caret {
+  font-size: 10px;
+  transition: transform var(--transition, 0.3s);
+}
+
+.nav-item-dropdown:hover .nav-dropdown-caret {
+  transform: rotate(180deg);
+}
+
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 8px);
+  width: 560px;
+  background: #fff;
+  border-radius: var(--radius-lg, 14px);
+  box-shadow: var(--shadow-lg, 0 24px 60px rgba(18, 24, 31, 0.16));
+  border: 1px solid var(--border-color, #e4e7ec);
+  padding: 28px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+  z-index: 50;
+}
+
+/* Invisible bridge so the mouse can travel from the trigger down into the
+   panel without the gap between them closing the menu. */
+.mega-menu::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+
+.mega-menu.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.mega-menu-inner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.mega-menu-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-menu-heading {
+  display: block;
+  font-family: var(--font-heading, inherit);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--heading-color, #12181f) !important;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid var(--accent-color, #c9752a);
+}
+
+.mega-menu-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mega-menu-column li a {
+  display: block;
+  padding: 8px 10px;
+  margin: 0 -10px;
+  border-radius: 8px;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: var(--text-color, #4a5361) !important;
+  transition: background var(--transition, 0.3s), color var(--transition, 0.3s), padding-left 0.2s;
+}
+
+.mega-menu-column li a:hover {
+  background: var(--light-bg, #f5f6f8);
+  color: var(--accent-color, #c9752a) !important;
+  padding-left: 16px;
+}
+
+/* ===========================
 RIGHT SIDE
 =========================== */
 
@@ -228,6 +334,14 @@ TABLET
   }
 
   .quote-btn {
+    display: none;
+  }
+
+  .nav-dropdown-caret {
+    display: none;
+  }
+
+  .mega-menu {
     display: none;
   }
 
