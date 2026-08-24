@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { FaBars, FaTimes, FaPhoneAlt, FaSearch, FaChevronDown } from "react-icons/fa";
 import { useScroll } from "../../../hooks/useScroll";
 import { productCatalog } from "../../../data/productsData";
+import logo from "../../../assets/logos/logo.png";
 import "./Navbar.css";
 
 function Navbar() {
@@ -25,7 +26,7 @@ function Navbar() {
     <header className={`navbar ${transparent ? "navbar-transparent" : "navbar-solid"}`}>
       <div className="container navbar-container">
         <Link to="/" className="logo">
-          <h2>Digital Print Solutions</h2>
+          <img src={logo} alt="Digital Print Solutions" className="logo-img" />
         </Link>
 
         <nav className={menuOpen ? "nav-menu active" : "nav-menu"}>
