@@ -90,7 +90,7 @@
   height: 60px;
   margin: 0 auto 20px;
   border-radius: 50%;
-  background: rgba(249, 115, 22, 0.1);
+  background: rgba(214, 40, 57, 0.1);
   color: var(--accent-color, var(--accent-color));
   display: flex;
   align-items: center;

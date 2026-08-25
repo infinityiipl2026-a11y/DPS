@@ -1,7 +1,8 @@
 // src/data/brands.js
 
 import yintechLogo from "../assets/logos/yintech.png";
-import sysformLogo from "../assets/logos/sysform.png";
+// SYSFORM: brand temporarily hidden from the site (Yintech-only showcase). Logo import kept for when it's re-enabled.
+// import sysformLogo from "../assets/logos/sysform.png";
 
 export const brands = [
   {
@@ -18,19 +19,20 @@ export const brands = [
     ],
   },
 
-  {
-    id: "sysform",
-    name: "Sysform",
-    logo: sysformLogo,
-    website: "https://www.sysform.tw/",
-    description:
-      "Sysform is a professional manufacturer of print finishing equipment including creasing machines, guillotines, laminators, perfect binders and label cutters.",
-    categories: [
-      "Paper Creasing",
-      "Guillotines",
-      "Perfect Binders",
-      "Laminators",
-      "Label Cutters",
-    ],
-  },
+  // SYSFORM: commented out to hide this brand from the site. Restore by uncommenting.
+  // {
+  //   id: "sysform",
+  //   name: "Sysform",
+  //   logo: sysformLogo,
+  //   website: "https://www.sysform.tw/",
+  //   description:
+  //     "Sysform is a professional manufacturer of print finishing equipment including creasing machines, guillotines, laminators, perfect binders and label cutters.",
+  //   categories: [
+  //     "Paper Creasing",
+  //     "Guillotines",
+  //     "Perfect Binders",
+  //     "Laminators",
+  //     "Label Cutters",
+  //   ],
+  // },
 ];

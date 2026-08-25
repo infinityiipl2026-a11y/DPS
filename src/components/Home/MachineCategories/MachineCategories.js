@@ -11,7 +11,7 @@ function MachineCategories() {
         <SectionTitle
           eyebrow="What We Offer"
           title="Machine Categories"
-          subtitle="Explore our complete range of industrial printing and finishing equipment, organized by category."
+          subtitle="Explore our complete range of industrial digital printing equipment, organized by category."
         />
 
         <div className="categories-grid">

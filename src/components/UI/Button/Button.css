@@ -31,24 +31,24 @@
 }
 
 .btn-primary:hover {
-  background: var(--accent-color-deep, #9C5A1C);
-  border-color: var(--accent-color-deep, #9C5A1C);
+  background: var(--accent-color-deep, #A01620);
+  border-color: var(--accent-color-deep, #A01620);
   transform: translateY(-3px);
-  box-shadow: var(--shadow-accent, 0 12px 24px rgba(201, 117, 42, 0.28));
+  box-shadow: var(--shadow-accent, 0 12px 24px rgba(214, 40, 57, 0.28));
 }
 
 /* Secondary: solid deep blue */
 .btn-secondary {
-  background: var(--secondary-color, #2452A8);
+  background: var(--secondary-color, #0E7C99);
   color: #fff;
-  border: 1px solid var(--secondary-color, #2452A8);
+  border: 1px solid var(--secondary-color, #0E7C99);
 }
 
 .btn-secondary:hover {
-  background: var(--secondary-color-deep, #16336E);
-  border-color: var(--secondary-color-deep, #16336E);
+  background: var(--secondary-color-deep, #075F7F);
+  border-color: var(--secondary-color-deep, #075F7F);
   transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(36, 82, 168, 0.25);
+  box-shadow: 0 12px 24px rgba(14, 124, 153, 0.25);
 }
 
 /* Outline: transparent with border */

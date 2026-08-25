@@ -52,9 +52,11 @@ function Footer() {
           <h4>Products</h4>
           <ul>
             <li><Link to="/products#digital-printing-machines">Digital Printing Machines</Link></li>
-            <li><Link to="/products#print-finishing-equipment">Print Finishing Equipment</Link></li>
+            {/* SYSFORM: Print Finishing Equipment link hidden while Sysform products are hidden */}
+            {/* <li><Link to="/products#print-finishing-equipment">Print Finishing Equipment</Link></li> */}
             <li><Link to="/brands#yintech">Yintech</Link></li>
-            <li><Link to="/brands#sysform">Sysform</Link></li>
+            {/* SYSFORM: brand link hidden while this brand is hidden from the showcase */}
+            {/* <li><Link to="/brands#sysform">Sysform</Link></li> */}
           </ul>
         </div>
 

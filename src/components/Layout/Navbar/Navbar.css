@@ -124,10 +124,15 @@ PRODUCTS MEGA MENU
   top: 100%;
   left: 50%;
   transform: translate(-50%, 8px);
-  width: 560px;
+  /* SYSFORM: was a fixed 560px for two category columns (Yintech +
+     Sysform). Only one category remains now, so the panel sizes itself
+     to its content instead of leaving a wide empty half. */
+  width: max-content;
+  min-width: 280px;
+  max-width: 560px;
   background: #fff;
   border-radius: var(--radius-lg, 14px);
-  box-shadow: var(--shadow-lg, 0 24px 60px rgba(18, 24, 31, 0.16));
+  box-shadow: var(--shadow-lg, 0 24px 60px rgba(10, 44, 54, 0.16));
   border: 1px solid var(--border-color, #e4e7ec);
   padding: 28px;
   opacity: 0;
@@ -157,7 +162,10 @@ PRODUCTS MEGA MENU
 
 .mega-menu-inner {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* SYSFORM: auto-fit collapses to a single column when there's only one
+     category, and expands back to a 2-column grid once a second category
+     (e.g. Sysform) is uncommented in data/productsData.js. */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 28px;
 }
 
@@ -173,10 +181,10 @@ PRODUCTS MEGA MENU
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--heading-color, #12181f) !important;
+  color: var(--heading-color, #0a2c36) !important;
   padding-bottom: 12px;
   margin-bottom: 12px;
-  border-bottom: 2px solid var(--accent-color, #c9752a);
+  border-bottom: 2px solid var(--accent-color, #d62839);
 }
 
 .mega-menu-column ul {
@@ -198,7 +206,7 @@ PRODUCTS MEGA MENU
 
 .mega-menu-column li a:hover {
   background: var(--light-bg, #f5f6f8);
-  color: var(--accent-color, #c9752a) !important;
+  color: var(--accent-color, #d62839) !important;
   padding-left: 16px;
 }
 

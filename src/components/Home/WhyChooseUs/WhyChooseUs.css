@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-md, 10px);
-  background: rgba(23, 62, 146, 0.08);
+  background: rgba(14, 124, 153, 0.08);
   color: var(--secondary-color, var(--secondary-color));
   font-size: 24px;
   margin-bottom: 24px;

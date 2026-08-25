@@ -4,7 +4,8 @@ import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
 
 // Temporary images
 import digitalMachine from "../../../assets/images/digital-print-machine.png";
-import finishingMachine from "../../../assets/images/finishing-machine.png";
+// SYSFORM: only used by the "Print Finishing Equipment" card below, which is commented out.
+// import finishingMachine from "../../../assets/images/finishing-machine.png";
 
 function OurSolutions() {
   return (
@@ -81,8 +82,8 @@ function OurSolutions() {
 
           </div>
 
-          {/* Card 2 */}
-
+          {/* Card 2 — SYSFORM: "Print Finishing Equipment" card commented out to hide this brand from the showcase. */}
+          {/*
           <div className="solution-card">
 
             <div className="solution-image">
@@ -142,6 +143,7 @@ function OurSolutions() {
             </div>
 
           </div>
+          */}
 
         </div>
 

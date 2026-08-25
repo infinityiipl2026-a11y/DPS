@@ -80,7 +80,12 @@
 
     display:grid;
 
-    grid-template-columns:repeat(2,1fr);
+    /* SYSFORM: was repeat(2,1fr) for two brand cards. Only the Yintech card
+       remains now that Sysform is hidden, so this renders as a single
+       centered column instead of leaving an empty second slot. */
+    grid-template-columns:minmax(0,720px);
+
+    justify-content:center;
 
     gap:40px;
 

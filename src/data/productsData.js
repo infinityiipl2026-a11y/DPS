@@ -497,418 +497,420 @@ export const productCatalog = [
       }
     ]
   },
-  {
-    id: "finishing-equipment",
-    title: "Print Finishing Equipment",
-    brand: "Sysform",
-    eyebrow: "Print Finishing Machinery — Sysform",
-    description:
-      "Guillotines, perfect binders, creasers, laminators and label cutters engineered by Sysform Technology Corp., a Taiwan-headquartered manufacturer of print finishing machinery since 2007.",
-    subcategories: [
-      {
-        id: "paper-creasing-machines",
-        title: "Paper Creasing Machines",
-        description:
-          "Manual and digital creasing/perforating machines for flyers, covers and folded print work.",
-        products: [
-          {
-            id: "cp340-digital-creaser",
-            name: "CP340 Digital Creaser",
-            model: "CP340",
-            brand: "Sysform",
-            shortDescription:
-              "Digital manual-feed creaser/perforator with 32 programmable memory settings, for flyers, menus and book covers.",
-            description:
-              "A digital creasing and perforating system with a manual-feed paper path, suited to flyers, leaflets, menus and book covers. It ships with one set of creasing knives and one set of perforating knives, and stores up to 32 creasing/perforating programs in memory.",
-            image: "https://www.sysform.tw/Uploads/1773899725.364669bb8fcd5901e4.91630651.jpg",
-            features: [
-              "Creasing & perforating in one pass",
-              "32-program digital memory",
-              "No Paper / Paper Jammed auto-detection",
-              "Total counter & batch counter",
-              "mm / inch switchable display"
-            ],
-            specifications: [
-              { label: "Paper Width", value: "340mm" },
-              { label: "Mode", value: "Creasing & Perforating" },
-              { label: "Paper Feed Type", value: "Manual feeding" },
-              { label: "Speed", value: "2,850 sheets/hr (A4, 1 creasing line)" },
-              { label: "Paper Thickness", value: "70–400 gsm" },
-              { label: "Creasing Accuracy", value: "±0.2mm" },
-              { label: "Memory", value: "32 programs" },
-              { label: "Paper Size Range", value: "50×90mm – 340mm×3000mm" },
-              { label: "Creasing Lines / Sheet", value: "Up to 32" },
-              { label: "Power", value: "110V / 220V" }
-            ],
-            applications: [
-              "Flyers and leaflets",
-              "Restaurant menus",
-              "Folded book and brochure covers"
-            ],
-            brochureUrl: null,
-            sourceUrl: "https://www.sysform.tw/index.php/product/index/id/114.html"
-          },
-          {
-            id: "pc360-manual-creaser",
-            name: "PC-360 Manual Creaser",
-            model: "PC-360",
-            brand: "Sysform",
-            shortDescription:
-              "Compact steel-tool manual creaser that scores clean lines on coated, uncoated and photocopy stock.",
-            description:
-              "A compact, manually-operated creasing machine fitted with durable steel upper and lower creasing tools rather than rubber ones. Steel tooling creases cleanly on coated art paper, tough paper and photocopy paper alike, and needs far less frequent replacement than rubber tooling on thick or hard stock.",
-            image: "https://www.sysform.tw/Uploads/1547799044.77215c418a04bc8236.60199447.jpg",
-            features: [
-              "Durable steel creasing tools (not rubber)",
-              "Clean creasing on coated, uncoated and copy paper",
-              "Small footprint, easy to operate and maintain",
-              "Long tool life on thick/hard stock"
-            ],
-            specifications: [
-              { label: "Paper Width", value: "350mm / 13.78\"" },
-              { label: "Paper Thickness", value: "Up to 450 gsm" },
-              { label: "Creasing", value: "Yes" },
-              { label: "Perforating", value: "No" },
-              { label: "Dimensions", value: "127 × 383 × 600mm" },
-              { label: "Weight", value: "4 kg" }
-            ],
-            applications: [
-              "Small print shops and copy centres",
-              "Business card and cover stock creasing",
-              "Low-volume finishing work"
-            ],
-            brochureUrl: null,
-            sourceUrl: "https://www.sysform.tw/index.php/product/index/id/57.html"
-          }
-        ]
-      },
-      {
-        id: "guillotines",
-        title: "Guillotines",
-        description:
-          "Manual and hydraulic paper cutters for print shops, copy centres and packaging converters.",
-        products: [
-          {
-            id: "520hp-hydraulic-guillotine",
-            name: "520HP Hydraulic Guillotine",
-            model: "520HP",
-            brand: "Sysform",
-            shortDescription:
-              "Fully hydraulic programmable guillotine with a big colour touchscreen and 99 stored cutting programs.",
-            description:
-              "A fully hydraulic paper cutter built for fast, repeatable production cutting in printing houses and copy centres. It stores 99 programs of 10 steps each on a large colour touchscreen (switchable mm/inch), with adjustable clamp pressure, a foot-pedal pre-clamp, and multiple safety systems including a safety beam and two-handed operation.",
-            image: "https://www.sysform.tw/Uploads/1555472784.95715cb6a190e9aa61.92068466.png",
-            features: [
-              "Fully hydraulic clamp and cutting system",
-              "Big colour touchscreen, mm/inch switchable",
-              "99 programs × 10 steps memory",
-              "Foot pedal pre-clamping with optical cutting-line indicator",
-              "Safety beam + two-handed operation + blade lockout",
-              "Electronic hand-wheel backgauge, variable speed"
-            ],
-            specifications: [
-              { label: "Cutting Width", value: "520mm / 20.47\"" },
-              { label: "Cutting Height", value: "80mm / 3.15\"" },
-              { label: "Narrow Cut", value: "15mm / 0.59\"" },
-              { label: "Cutting Depth", value: "580mm / 22.84\"" },
-              { label: "Dimensions (H×W×D)", value: "1300 × 946 × 1396mm" },
-              { label: "Power Supply", value: "230V, 50/60Hz, 1PH, 20A" },
-              { label: "Weight", value: "300 kg" }
-            ],
-            applications: [
-              "Commercial print shops",
-              "Copy and reprographic centres",
-              "High-volume production cutting"
-            ],
-            brochureUrl: null,
-            sourceUrl: "https://www.sysform.tw/index.php/product/index/id/49.html"
-          },
-          {
-            id: "430m-manual-guillotine",
-            name: "430M Manual Guillotine",
-            model: "430M",
-            brand: "Sysform",
-            shortDescription:
-              "Entry-level manual paper cutter with hand-crank backgauge and full safety guarding.",
-            description:
-              "A manually operated guillotine with a hand-crank backgauge, built for smaller print and copy shops. It includes front and rear safety guards that lock automatically while cutting, mandatory two-handed operation, a safety blade-change device, and an optical cutting-line indicator.",
-            image: "https://www.sysform.tw/Uploads/1547716489.05925c4047890e73e1.12527282.jpg",
-            features: [
-              "Manual backgauge with hand crank",
-              "Front & rear safety guards, auto-locked while cutting",
-              "Mandatory two-handed operation",
-              "Optical cutting-line indicator",
-              "Blade fine-depth adjustable from outside the machine"
-            ],
-            specifications: [
-              { label: "Cutting Width", value: "430mm / 16.93\"" },
-              { label: "Cutting Height", value: "40mm / 1.57\"" },
-              { label: "Narrow Cut", value: "40mm / 1.57\"" },
-              { label: "Cutting Depth", value: "430mm / 16.93\"" },
-              { label: "Dimensions (H×W×D)", value: "400 × 870 × 800mm" },
-              { label: "Power Supply", value: "230V / 115V, 50/60Hz" },
-              { label: "Weight", value: "55 kg" }
-            ],
-            applications: [
-              "Small print shops and offices",
-              "Business card and stationery cutting",
-              "Light-duty everyday paper cutting"
-            ],
-            brochureUrl: null,
-            sourceUrl: "https://www.sysform.tw/index.php/product/index/id/1.html"
-          }
-        ]
-      },
-      {
-        id: "perfect-binders",
-        title: "Perfect Binders",
-        description:
-          "Automatic slit-glue-bind systems for softcover book, manual and catalogue production.",
-        products: [
-          {
-            id: "50b-perfect-binder",
-            name: "50B Perfect Binder",
-            model: "50B",
-            brand: "Sysform",
-            shortDescription:
-              "Automatic slitting-gluing-binding system with side-glue device, running up to 400 books/hour.",
-            description:
-              "A fully automatic perfect binder that slits, glues and binds in one pass, controlled by preset recipes. It includes a side-glue device for stronger spine adhesion, a jogger table and paper table for smoother operation, quick pre-heating, and an emergency stop with exhaust fan and safety guarding.",
-            image: "https://www.sysform.tw/Uploads/1547715263.98125c4042bfef8df1.43963260.jpg",
-            features: [
-              "Automatic slit–glue–bind cycle, recipe-controlled",
-              "Side-glue device for reinforced spine adhesion",
-              "Jogger table & paper table included",
-              "30-minute quick pre-heating",
-              "Emergency stop, exhaust fan and safety guard"
-            ],
-            specifications: [
-              { label: "Max. Book Size (Spine)", value: "340mm / 13.39\" (A4)" },
-              { label: "Side Glue Device", value: "Yes" },
-              { label: "Binding Capacity", value: "60mm / 2.36\"" },
-              { label: "Cycle Speed", value: "400 books/hour" },
-              { label: "Cover Thickness", value: "70–300 gsm" },
-              { label: "Slitting Method", value: "Mill cutter + comb cutter" },
-              { label: "Pre-heating Time", value: "30 minutes" },
-              { label: "Wattage", value: "1,100W" },
-              { label: "Dimensions (W×D×H)", value: "1180 × 520 × 950mm" },
-              { label: "Power Supply", value: "110V / 220V" },
-              { label: "Weight", value: "190 kg" }
-            ],
-            applications: [
-              "Softcover book binding",
-              "Manuals and catalogues",
-              "Photo book and yearbook production"
-            ],
-            brochureUrl: null,
-            sourceUrl: "https://www.sysform.tw/index.php/product/index/id/44.html"
-          },
-          {
-            id: "60d-perfect-binder",
-            name: "60D Perfect Binder",
-            model: "60D",
-            brand: "Sysform",
-            shortDescription:
-              "Higher-capacity perfect binder with adjustable spine shape and touchscreen control, up to 480 books/hour.",
-            description:
-              "A larger-format perfect binder offering an adjustable spine shape, adjustable clamp height, and touch-panel control at a higher cycle speed than the 50B. It runs a two-speed choice with jogger table, paper table, safety cover and exhaust fan for continuous production.",
-            image: "https://www.sysform.tw/Uploads/1774258667.677369c109eba55a86.55273691.jpg",
-            features: [
-              "Adjustable spine shape & clamp height",
-              "Touchscreen panel control",
-              "Two-speed operation",
-              "Jogger table, paper table & safety cover included",
-              "Side-glue device for reinforced spine adhesion"
-            ],
-            specifications: [
-              { label: "Max. Book Size (Spine)", value: "435mm / 17.13\" (A3)" },
-              { label: "Side Glue Device", value: "Yes" },
-              { label: "Binding Capacity", value: "60mm / 2.36\"" },
-              { label: "Cycle Speed", value: "480 books/hour" },
-              { label: "Cover Thickness", value: "70–350 gsm" },
-              { label: "Slitting Method", value: "Mill cutter + comb cutter" },
-              { label: "Pre-heating Time", value: "30 minutes" },
-              { label: "Wattage", value: "2,800W" },
-              { label: "Dimensions (W×D×H)", value: "1600 × 530 × 950mm" },
-              { label: "Power Supply", value: "110V / 220V" },
-              { label: "Weight", value: "250 kg" }
-            ],
-            applications: [
-              "Higher-volume softcover book binding",
-              "A3-spine manuals and catalogues",
-              "Commercial bindery production runs"
-            ],
-            brochureUrl: null,
-            sourceUrl: "https://www.sysform.tw/index.php/product/index/id/151.html"
-          }
-        ]
-      },
-      {
-        id: "laminators",
-        title: "Laminators",
-        description:
-          "Hot and cold roll laminators for photos, posters, documents and commercial print protection.",
-        products: [
-          {
-            id: "auto-350-laminator",
-            name: "AUTO-350 Fully Automatic Laminator",
-            model: "AUTO-350",
-            brand: "Sysform",
-            shortDescription:
-              "Fully automatic roll laminator with auto feed, auto cutting and electronic anti-curling control.",
-            description:
-              "A fully automatic hot-and-cold roll laminator with auto feeding, auto cutting, a large-diameter steel roller and an electronically settable anti-curling device, plus edge slitting for a clean finished edge.",
-            image: "https://www.sysform.tw/Uploads/1547868396.42075c4298ec66b402.61194448.jpg",
-            features: [
-              "Fully automatic feeding and cutting",
-              "Big steel roller for even heat/pressure transfer",
-              "Electronically settable anti-curling device",
-              "Edge slitting for a clean finished edge",
-              "Runs both hot and cold laminating film"
-            ],
-            specifications: [
-              { label: "Laminating Width", value: "350mm" },
-              { label: "Loading Capacity", value: "50mm" },
-              { label: "Core Size", value: "1\" & 3\"" },
-              { label: "Speed", value: "0–5 m/min, adjustable" },
-              { label: "Temperature Range", value: "0–160°C" },
-              { label: "Paper Thickness", value: "Up to 7mm" },
-              { label: "Dimensions", value: "1510 × 680 × 1200mm" },
-              { label: "Weight", value: "200 kg" },
-              { label: "Films Available", value: "Glossy, Matt" }
-            ],
-            applications: [
-              "Poster and signage lamination",
-              "High-volume document lamination",
-              "Print-shop laminating services"
-            ],
-            brochureUrl: null,
-            sourceUrl: "https://www.sysform.tw/index.php/product/index/id/88.html"
-          },
-          {
-            id: "lm-360n-laminator",
-            name: "LM-360N Roll Laminator",
-            model: "LM-360N",
-            brand: "Sysform",
-            shortDescription:
-              "Tabletop hot & cold roll laminator for schools, offices, copy centres and print shops.",
-            description:
-              "A tabletop hot-and-cold roll laminating machine designed for professional use in schools, offices, copy centres and graphic-print shops — suited to laminating photos, pictures, documents, inkjet prints and posters.",
-            image: "https://www.sysform.tw/Uploads/1768793467.8965696da57bdae095.17338020.jpg",
-            features: [
-              "Runs both hot and cold laminating film",
-              "Anti-curling device",
-              "3,000m film loading capacity",
-              "Adjustable operating speed",
-              "Optional floor stand available"
-            ],
-            specifications: [
-              { label: "Max. Laminating Width", value: "360mm" },
-              { label: "Paper Thickness", value: "125–350 gsm" },
-              { label: "Core Size", value: "1\" & 3\"" },
-              { label: "Operating Speed", value: "Up to 10 m/min, adjustable" },
-              { label: "Laminating Temperature", value: "90–110°C" },
-              { label: "Total Power", value: "1,150W" },
-              { label: "Anti-curling Device", value: "Yes" },
-              { label: "Film Loading Capacity", value: "3,000 metres" },
-              { label: "Machine Size (W×D×H)", value: "56 × 43 × 40cm" }
-            ],
-            applications: [
-              "Schools and offices",
-              "Copy centres",
-              "Photo, poster and document lamination"
-            ],
-            brochureUrl: null,
-            sourceUrl: "https://www.sysform.tw/index.php/product/index/id/80.html"
-          }
-        ]
-      },
-      {
-        id: "label-cutters",
-        title: "Label Cutters",
-        description:
-          "Auto-feed digital contour cutters for die-cutting self-adhesive labels and stickers.",
-        products: [
-          {
-            id: "sf-350-label-cutter",
-            name: "SF-350 Label Cutter",
-            model: "SF-350",
-            brand: "Sysform",
-            shortDescription:
-              "Auto-feed digital label cutter with QR-code positioning and CorelDRAW/AI workflow support.",
-            description:
-              "An auto-feeding label cutter driven by a step-motor system with a 4.3\" touch LCD, supporting USB, USB-disk, Ethernet and Wi-Fi connectivity. It uses HD-camera / circle-mark / L-mark positioning and QR-code functionality for accurate contour cutting from Adobe Illustrator or CorelDRAW files.",
-            image: "https://www.sysform.tw/Uploads/1774321515.798569c1ff6bc2f2e5.19926968.jpg",
-            features: [
-              "Auto-feeding, step-motor drive system",
-              "4.3\" touch LCD control panel",
-              "USB / USB-disk / Ethernet / Wi-Fi connectivity",
-              "HD camera / circle-mark / L-mark positioning",
-              "QR-code function; supports Illustrator & CorelDRAW"
-            ],
-            specifications: [
-              { label: "Machine Type", value: "Auto-feeding label cutter" },
-              { label: "Max. Feeding Width", value: "350mm" },
-              { label: "Max. Cutting Width", value: "320mm" },
-              { label: "Max. Cutting Speed", value: "800mm/s" },
-              { label: "Max. Cutting Thickness", value: "80–400g / 1mm" },
-              { label: "Drive", value: "Step motor system" },
-              { label: "Number of Tools", value: "1" },
-              { label: "Accuracy", value: "±0.05mm" },
-              { label: "Knife Force", value: "50g–800g" },
-              { label: "Power", value: "110V–240V, 50/60Hz" },
-              { label: "Software", value: "Illustrator, CorelDRAW (Windows)" }
-            ],
-            applications: [
-              "Self-adhesive sticker & label die-cutting",
-              "Short-run label converting",
-              "In-house label production for print shops"
-            ],
-            brochureUrl: null,
-            sourceUrl: "https://www.sysform.tw/index.php/product/index/id/161.html"
-          },
-          {
-            id: "lc-350-pro-label-cutter",
-            name: "LC-350 Pro / LC-350 Pro Max Label Cutter",
-            model: "LC-350 Pro / LC-350 Pro Max",
-            brand: "Sysform",
-            shortDescription:
-              "Servo-driven auto-feed label cutter, up to twice the cutting speed of the SF-350, with dual-tool Pro Max option.",
-            description:
-              "The higher-performance sibling of the SF-350, driven by a servo-motor system for cutting speeds up to 1500mm/s. The Pro Max variant adds a second tool station for combined cutting and creasing/kiss-cutting passes, while retaining the same camera-based registration and QR-code workflow.",
-            image: "https://www.sysform.tw/Uploads/1774324254.128269c20a1e1f4fb0.49739694.jpg",
-            features: [
-              "Servo motor drive — up to 1500mm/s cutting speed",
-              "Pro Max adds a second tool station",
-              "4.3\" touch LCD control panel",
-              "USB / USB-disk / Ethernet / Wi-Fi connectivity",
-              "HD camera / circle-mark / L-mark positioning + QR-code"
-            ],
-            specifications: [
-              { label: "Machine Type", value: "Auto-feeding label cutter" },
-              { label: "Max. Feeding Width", value: "350mm" },
-              { label: "Max. Cutting Width", value: "320mm" },
-              { label: "Max. Cutting Speed", value: "1,500mm/s" },
-              { label: "Max. Cutting Thickness", value: "80–400g / 1mm" },
-              { label: "Drive", value: "Servo motor system" },
-              { label: "Number of Tools", value: "1 (Pro) / 2 (Pro Max)" },
-              { label: "Accuracy", value: "±0.05mm" },
-              { label: "Knife Force", value: "50g–800g" },
-              { label: "Power", value: "110V–240V, 50/60Hz" },
-              { label: "Software", value: "Illustrator, CorelDRAW (Windows)" }
-            ],
-            applications: [
-              "High-speed label & sticker die-cutting",
-              "Combined cut + crease label finishing (Pro Max)",
-              "Production-volume label converting"
-            ],
-            brochureUrl: null,
-            sourceUrl: "https://www.sysform.tw/index.php/product/index/id/163.html"
-          }
-        ]
-      }
-    ]
-  }
+  // SYSFORM: entire Print Finishing Equipment category commented out to hide it from the showcase (Yintech-only for now).
+  // To restore, uncomment this whole block.
+  //   {
+  //     id: "finishing-equipment",
+  //     title: "Print Finishing Equipment",
+  //     brand: "Sysform",
+  //     eyebrow: "Print Finishing Machinery — Sysform",
+  //     description:
+  //       "Guillotines, perfect binders, creasers, laminators and label cutters engineered by Sysform Technology Corp., a Taiwan-headquartered manufacturer of print finishing machinery since 2007.",
+  //     subcategories: [
+  //       {
+  //         id: "paper-creasing-machines",
+  //         title: "Paper Creasing Machines",
+  //         description:
+  //           "Manual and digital creasing/perforating machines for flyers, covers and folded print work.",
+  //         products: [
+  //           {
+  //             id: "cp340-digital-creaser",
+  //             name: "CP340 Digital Creaser",
+  //             model: "CP340",
+  //             brand: "Sysform",
+  //             shortDescription:
+  //               "Digital manual-feed creaser/perforator with 32 programmable memory settings, for flyers, menus and book covers.",
+  //             description:
+  //               "A digital creasing and perforating system with a manual-feed paper path, suited to flyers, leaflets, menus and book covers. It ships with one set of creasing knives and one set of perforating knives, and stores up to 32 creasing/perforating programs in memory.",
+  //             image: "https://www.sysform.tw/Uploads/1773899725.364669bb8fcd5901e4.91630651.jpg",
+  //             features: [
+  //               "Creasing & perforating in one pass",
+  //               "32-program digital memory",
+  //               "No Paper / Paper Jammed auto-detection",
+  //               "Total counter & batch counter",
+  //               "mm / inch switchable display"
+  //             ],
+  //             specifications: [
+  //               { label: "Paper Width", value: "340mm" },
+  //               { label: "Mode", value: "Creasing & Perforating" },
+  //               { label: "Paper Feed Type", value: "Manual feeding" },
+  //               { label: "Speed", value: "2,850 sheets/hr (A4, 1 creasing line)" },
+  //               { label: "Paper Thickness", value: "70–400 gsm" },
+  //               { label: "Creasing Accuracy", value: "±0.2mm" },
+  //               { label: "Memory", value: "32 programs" },
+  //               { label: "Paper Size Range", value: "50×90mm – 340mm×3000mm" },
+  //               { label: "Creasing Lines / Sheet", value: "Up to 32" },
+  //               { label: "Power", value: "110V / 220V" }
+  //             ],
+  //             applications: [
+  //               "Flyers and leaflets",
+  //               "Restaurant menus",
+  //               "Folded book and brochure covers"
+  //             ],
+  //             brochureUrl: null,
+  //             sourceUrl: "https://www.sysform.tw/index.php/product/index/id/114.html"
+  //           },
+  //           {
+  //             id: "pc360-manual-creaser",
+  //             name: "PC-360 Manual Creaser",
+  //             model: "PC-360",
+  //             brand: "Sysform",
+  //             shortDescription:
+  //               "Compact steel-tool manual creaser that scores clean lines on coated, uncoated and photocopy stock.",
+  //             description:
+  //               "A compact, manually-operated creasing machine fitted with durable steel upper and lower creasing tools rather than rubber ones. Steel tooling creases cleanly on coated art paper, tough paper and photocopy paper alike, and needs far less frequent replacement than rubber tooling on thick or hard stock.",
+  //             image: "https://www.sysform.tw/Uploads/1547799044.77215c418a04bc8236.60199447.jpg",
+  //             features: [
+  //               "Durable steel creasing tools (not rubber)",
+  //               "Clean creasing on coated, uncoated and copy paper",
+  //               "Small footprint, easy to operate and maintain",
+  //               "Long tool life on thick/hard stock"
+  //             ],
+  //             specifications: [
+  //               { label: "Paper Width", value: "350mm / 13.78\"" },
+  //               { label: "Paper Thickness", value: "Up to 450 gsm" },
+  //               { label: "Creasing", value: "Yes" },
+  //               { label: "Perforating", value: "No" },
+  //               { label: "Dimensions", value: "127 × 383 × 600mm" },
+  //               { label: "Weight", value: "4 kg" }
+  //             ],
+  //             applications: [
+  //               "Small print shops and copy centres",
+  //               "Business card and cover stock creasing",
+  //               "Low-volume finishing work"
+  //             ],
+  //             brochureUrl: null,
+  //             sourceUrl: "https://www.sysform.tw/index.php/product/index/id/57.html"
+  //           }
+  //         ]
+  //       },
+  //       {
+  //         id: "guillotines",
+  //         title: "Guillotines",
+  //         description:
+  //           "Manual and hydraulic paper cutters for print shops, copy centres and packaging converters.",
+  //         products: [
+  //           {
+  //             id: "520hp-hydraulic-guillotine",
+  //             name: "520HP Hydraulic Guillotine",
+  //             model: "520HP",
+  //             brand: "Sysform",
+  //             shortDescription:
+  //               "Fully hydraulic programmable guillotine with a big colour touchscreen and 99 stored cutting programs.",
+  //             description:
+  //               "A fully hydraulic paper cutter built for fast, repeatable production cutting in printing houses and copy centres. It stores 99 programs of 10 steps each on a large colour touchscreen (switchable mm/inch), with adjustable clamp pressure, a foot-pedal pre-clamp, and multiple safety systems including a safety beam and two-handed operation.",
+  //             image: "https://www.sysform.tw/Uploads/1555472784.95715cb6a190e9aa61.92068466.png",
+  //             features: [
+  //               "Fully hydraulic clamp and cutting system",
+  //               "Big colour touchscreen, mm/inch switchable",
+  //               "99 programs × 10 steps memory",
+  //               "Foot pedal pre-clamping with optical cutting-line indicator",
+  //               "Safety beam + two-handed operation + blade lockout",
+  //               "Electronic hand-wheel backgauge, variable speed"
+  //             ],
+  //             specifications: [
+  //               { label: "Cutting Width", value: "520mm / 20.47\"" },
+  //               { label: "Cutting Height", value: "80mm / 3.15\"" },
+  //               { label: "Narrow Cut", value: "15mm / 0.59\"" },
+  //               { label: "Cutting Depth", value: "580mm / 22.84\"" },
+  //               { label: "Dimensions (H×W×D)", value: "1300 × 946 × 1396mm" },
+  //               { label: "Power Supply", value: "230V, 50/60Hz, 1PH, 20A" },
+  //               { label: "Weight", value: "300 kg" }
+  //             ],
+  //             applications: [
+  //               "Commercial print shops",
+  //               "Copy and reprographic centres",
+  //               "High-volume production cutting"
+  //             ],
+  //             brochureUrl: null,
+  //             sourceUrl: "https://www.sysform.tw/index.php/product/index/id/49.html"
+  //           },
+  //           {
+  //             id: "430m-manual-guillotine",
+  //             name: "430M Manual Guillotine",
+  //             model: "430M",
+  //             brand: "Sysform",
+  //             shortDescription:
+  //               "Entry-level manual paper cutter with hand-crank backgauge and full safety guarding.",
+  //             description:
+  //               "A manually operated guillotine with a hand-crank backgauge, built for smaller print and copy shops. It includes front and rear safety guards that lock automatically while cutting, mandatory two-handed operation, a safety blade-change device, and an optical cutting-line indicator.",
+  //             image: "https://www.sysform.tw/Uploads/1547716489.05925c4047890e73e1.12527282.jpg",
+  //             features: [
+  //               "Manual backgauge with hand crank",
+  //               "Front & rear safety guards, auto-locked while cutting",
+  //               "Mandatory two-handed operation",
+  //               "Optical cutting-line indicator",
+  //               "Blade fine-depth adjustable from outside the machine"
+  //             ],
+  //             specifications: [
+  //               { label: "Cutting Width", value: "430mm / 16.93\"" },
+  //               { label: "Cutting Height", value: "40mm / 1.57\"" },
+  //               { label: "Narrow Cut", value: "40mm / 1.57\"" },
+  //               { label: "Cutting Depth", value: "430mm / 16.93\"" },
+  //               { label: "Dimensions (H×W×D)", value: "400 × 870 × 800mm" },
+  //               { label: "Power Supply", value: "230V / 115V, 50/60Hz" },
+  //               { label: "Weight", value: "55 kg" }
+  //             ],
+  //             applications: [
+  //               "Small print shops and offices",
+  //               "Business card and stationery cutting",
+  //               "Light-duty everyday paper cutting"
+  //             ],
+  //             brochureUrl: null,
+  //             sourceUrl: "https://www.sysform.tw/index.php/product/index/id/1.html"
+  //           }
+  //         ]
+  //       },
+  //       {
+  //         id: "perfect-binders",
+  //         title: "Perfect Binders",
+  //         description:
+  //           "Automatic slit-glue-bind systems for softcover book, manual and catalogue production.",
+  //         products: [
+  //           {
+  //             id: "50b-perfect-binder",
+  //             name: "50B Perfect Binder",
+  //             model: "50B",
+  //             brand: "Sysform",
+  //             shortDescription:
+  //               "Automatic slitting-gluing-binding system with side-glue device, running up to 400 books/hour.",
+  //             description:
+  //               "A fully automatic perfect binder that slits, glues and binds in one pass, controlled by preset recipes. It includes a side-glue device for stronger spine adhesion, a jogger table and paper table for smoother operation, quick pre-heating, and an emergency stop with exhaust fan and safety guarding.",
+  //             image: "https://www.sysform.tw/Uploads/1547715263.98125c4042bfef8df1.43963260.jpg",
+  //             features: [
+  //               "Automatic slit–glue–bind cycle, recipe-controlled",
+  //               "Side-glue device for reinforced spine adhesion",
+  //               "Jogger table & paper table included",
+  //               "30-minute quick pre-heating",
+  //               "Emergency stop, exhaust fan and safety guard"
+  //             ],
+  //             specifications: [
+  //               { label: "Max. Book Size (Spine)", value: "340mm / 13.39\" (A4)" },
+  //               { label: "Side Glue Device", value: "Yes" },
+  //               { label: "Binding Capacity", value: "60mm / 2.36\"" },
+  //               { label: "Cycle Speed", value: "400 books/hour" },
+  //               { label: "Cover Thickness", value: "70–300 gsm" },
+  //               { label: "Slitting Method", value: "Mill cutter + comb cutter" },
+  //               { label: "Pre-heating Time", value: "30 minutes" },
+  //               { label: "Wattage", value: "1,100W" },
+  //               { label: "Dimensions (W×D×H)", value: "1180 × 520 × 950mm" },
+  //               { label: "Power Supply", value: "110V / 220V" },
+  //               { label: "Weight", value: "190 kg" }
+  //             ],
+  //             applications: [
+  //               "Softcover book binding",
+  //               "Manuals and catalogues",
+  //               "Photo book and yearbook production"
+  //             ],
+  //             brochureUrl: null,
+  //             sourceUrl: "https://www.sysform.tw/index.php/product/index/id/44.html"
+  //           },
+  //           {
+  //             id: "60d-perfect-binder",
+  //             name: "60D Perfect Binder",
+  //             model: "60D",
+  //             brand: "Sysform",
+  //             shortDescription:
+  //               "Higher-capacity perfect binder with adjustable spine shape and touchscreen control, up to 480 books/hour.",
+  //             description:
+  //               "A larger-format perfect binder offering an adjustable spine shape, adjustable clamp height, and touch-panel control at a higher cycle speed than the 50B. It runs a two-speed choice with jogger table, paper table, safety cover and exhaust fan for continuous production.",
+  //             image: "https://www.sysform.tw/Uploads/1774258667.677369c109eba55a86.55273691.jpg",
+  //             features: [
+  //               "Adjustable spine shape & clamp height",
+  //               "Touchscreen panel control",
+  //               "Two-speed operation",
+  //               "Jogger table, paper table & safety cover included",
+  //               "Side-glue device for reinforced spine adhesion"
+  //             ],
+  //             specifications: [
+  //               { label: "Max. Book Size (Spine)", value: "435mm / 17.13\" (A3)" },
+  //               { label: "Side Glue Device", value: "Yes" },
+  //               { label: "Binding Capacity", value: "60mm / 2.36\"" },
+  //               { label: "Cycle Speed", value: "480 books/hour" },
+  //               { label: "Cover Thickness", value: "70–350 gsm" },
+  //               { label: "Slitting Method", value: "Mill cutter + comb cutter" },
+  //               { label: "Pre-heating Time", value: "30 minutes" },
+  //               { label: "Wattage", value: "2,800W" },
+  //               { label: "Dimensions (W×D×H)", value: "1600 × 530 × 950mm" },
+  //               { label: "Power Supply", value: "110V / 220V" },
+  //               { label: "Weight", value: "250 kg" }
+  //             ],
+  //             applications: [
+  //               "Higher-volume softcover book binding",
+  //               "A3-spine manuals and catalogues",
+  //               "Commercial bindery production runs"
+  //             ],
+  //             brochureUrl: null,
+  //             sourceUrl: "https://www.sysform.tw/index.php/product/index/id/151.html"
+  //           }
+  //         ]
+  //       },
+  //       {
+  //         id: "laminators",
+  //         title: "Laminators",
+  //         description:
+  //           "Hot and cold roll laminators for photos, posters, documents and commercial print protection.",
+  //         products: [
+  //           {
+  //             id: "auto-350-laminator",
+  //             name: "AUTO-350 Fully Automatic Laminator",
+  //             model: "AUTO-350",
+  //             brand: "Sysform",
+  //             shortDescription:
+  //               "Fully automatic roll laminator with auto feed, auto cutting and electronic anti-curling control.",
+  //             description:
+  //               "A fully automatic hot-and-cold roll laminator with auto feeding, auto cutting, a large-diameter steel roller and an electronically settable anti-curling device, plus edge slitting for a clean finished edge.",
+  //             image: "https://www.sysform.tw/Uploads/1547868396.42075c4298ec66b402.61194448.jpg",
+  //             features: [
+  //               "Fully automatic feeding and cutting",
+  //               "Big steel roller for even heat/pressure transfer",
+  //               "Electronically settable anti-curling device",
+  //               "Edge slitting for a clean finished edge",
+  //               "Runs both hot and cold laminating film"
+  //             ],
+  //             specifications: [
+  //               { label: "Laminating Width", value: "350mm" },
+  //               { label: "Loading Capacity", value: "50mm" },
+  //               { label: "Core Size", value: "1\" & 3\"" },
+  //               { label: "Speed", value: "0–5 m/min, adjustable" },
+  //               { label: "Temperature Range", value: "0–160°C" },
+  //               { label: "Paper Thickness", value: "Up to 7mm" },
+  //               { label: "Dimensions", value: "1510 × 680 × 1200mm" },
+  //               { label: "Weight", value: "200 kg" },
+  //               { label: "Films Available", value: "Glossy, Matt" }
+  //             ],
+  //             applications: [
+  //               "Poster and signage lamination",
+  //               "High-volume document lamination",
+  //               "Print-shop laminating services"
+  //             ],
+  //             brochureUrl: null,
+  //             sourceUrl: "https://www.sysform.tw/index.php/product/index/id/88.html"
+  //           },
+  //           {
+  //             id: "lm-360n-laminator",
+  //             name: "LM-360N Roll Laminator",
+  //             model: "LM-360N",
+  //             brand: "Sysform",
+  //             shortDescription:
+  //               "Tabletop hot & cold roll laminator for schools, offices, copy centres and print shops.",
+  //             description:
+  //               "A tabletop hot-and-cold roll laminating machine designed for professional use in schools, offices, copy centres and graphic-print shops — suited to laminating photos, pictures, documents, inkjet prints and posters.",
+  //             image: "https://www.sysform.tw/Uploads/1768793467.8965696da57bdae095.17338020.jpg",
+  //             features: [
+  //               "Runs both hot and cold laminating film",
+  //               "Anti-curling device",
+  //               "3,000m film loading capacity",
+  //               "Adjustable operating speed",
+  //               "Optional floor stand available"
+  //             ],
+  //             specifications: [
+  //               { label: "Max. Laminating Width", value: "360mm" },
+  //               { label: "Paper Thickness", value: "125–350 gsm" },
+  //               { label: "Core Size", value: "1\" & 3\"" },
+  //               { label: "Operating Speed", value: "Up to 10 m/min, adjustable" },
+  //               { label: "Laminating Temperature", value: "90–110°C" },
+  //               { label: "Total Power", value: "1,150W" },
+  //               { label: "Anti-curling Device", value: "Yes" },
+  //               { label: "Film Loading Capacity", value: "3,000 metres" },
+  //               { label: "Machine Size (W×D×H)", value: "56 × 43 × 40cm" }
+  //             ],
+  //             applications: [
+  //               "Schools and offices",
+  //               "Copy centres",
+  //               "Photo, poster and document lamination"
+  //             ],
+  //             brochureUrl: null,
+  //             sourceUrl: "https://www.sysform.tw/index.php/product/index/id/80.html"
+  //           }
+  //         ]
+  //       },
+  //       {
+  //         id: "label-cutters",
+  //         title: "Label Cutters",
+  //         description:
+  //           "Auto-feed digital contour cutters for die-cutting self-adhesive labels and stickers.",
+  //         products: [
+  //           {
+  //             id: "sf-350-label-cutter",
+  //             name: "SF-350 Label Cutter",
+  //             model: "SF-350",
+  //             brand: "Sysform",
+  //             shortDescription:
+  //               "Auto-feed digital label cutter with QR-code positioning and CorelDRAW/AI workflow support.",
+  //             description:
+  //               "An auto-feeding label cutter driven by a step-motor system with a 4.3\" touch LCD, supporting USB, USB-disk, Ethernet and Wi-Fi connectivity. It uses HD-camera / circle-mark / L-mark positioning and QR-code functionality for accurate contour cutting from Adobe Illustrator or CorelDRAW files.",
+  //             image: "https://www.sysform.tw/Uploads/1774321515.798569c1ff6bc2f2e5.19926968.jpg",
+  //             features: [
+  //               "Auto-feeding, step-motor drive system",
+  //               "4.3\" touch LCD control panel",
+  //               "USB / USB-disk / Ethernet / Wi-Fi connectivity",
+  //               "HD camera / circle-mark / L-mark positioning",
+  //               "QR-code function; supports Illustrator & CorelDRAW"
+  //             ],
+  //             specifications: [
+  //               { label: "Machine Type", value: "Auto-feeding label cutter" },
+  //               { label: "Max. Feeding Width", value: "350mm" },
+  //               { label: "Max. Cutting Width", value: "320mm" },
+  //               { label: "Max. Cutting Speed", value: "800mm/s" },
+  //               { label: "Max. Cutting Thickness", value: "80–400g / 1mm" },
+  //               { label: "Drive", value: "Step motor system" },
+  //               { label: "Number of Tools", value: "1" },
+  //               { label: "Accuracy", value: "±0.05mm" },
+  //               { label: "Knife Force", value: "50g–800g" },
+  //               { label: "Power", value: "110V–240V, 50/60Hz" },
+  //               { label: "Software", value: "Illustrator, CorelDRAW (Windows)" }
+  //             ],
+  //             applications: [
+  //               "Self-adhesive sticker & label die-cutting",
+  //               "Short-run label converting",
+  //               "In-house label production for print shops"
+  //             ],
+  //             brochureUrl: null,
+  //             sourceUrl: "https://www.sysform.tw/index.php/product/index/id/161.html"
+  //           },
+  //           {
+  //             id: "lc-350-pro-label-cutter",
+  //             name: "LC-350 Pro / LC-350 Pro Max Label Cutter",
+  //             model: "LC-350 Pro / LC-350 Pro Max",
+  //             brand: "Sysform",
+  //             shortDescription:
+  //               "Servo-driven auto-feed label cutter, up to twice the cutting speed of the SF-350, with dual-tool Pro Max option.",
+  //             description:
+  //               "The higher-performance sibling of the SF-350, driven by a servo-motor system for cutting speeds up to 1500mm/s. The Pro Max variant adds a second tool station for combined cutting and creasing/kiss-cutting passes, while retaining the same camera-based registration and QR-code workflow.",
+  //             image: "https://www.sysform.tw/Uploads/1774324254.128269c20a1e1f4fb0.49739694.jpg",
+  //             features: [
+  //               "Servo motor drive — up to 1500mm/s cutting speed",
+  //               "Pro Max adds a second tool station",
+  //               "4.3\" touch LCD control panel",
+  //               "USB / USB-disk / Ethernet / Wi-Fi connectivity",
+  //               "HD camera / circle-mark / L-mark positioning + QR-code"
+  //             ],
+  //             specifications: [
+  //               { label: "Machine Type", value: "Auto-feeding label cutter" },
+  //               { label: "Max. Feeding Width", value: "350mm" },
+  //               { label: "Max. Cutting Width", value: "320mm" },
+  //               { label: "Max. Cutting Speed", value: "1,500mm/s" },
+  //               { label: "Max. Cutting Thickness", value: "80–400g / 1mm" },
+  //               { label: "Drive", value: "Servo motor system" },
+  //               { label: "Number of Tools", value: "1 (Pro) / 2 (Pro Max)" },
+  //               { label: "Accuracy", value: "±0.05mm" },
+  //               { label: "Knife Force", value: "50g–800g" },
+  //               { label: "Power", value: "110V–240V, 50/60Hz" },
+  //               { label: "Software", value: "Illustrator, CorelDRAW (Windows)" }
+  //             ],
+  //             applications: [
+  //               "High-speed label & sticker die-cutting",
+  //               "Combined cut + crease label finishing (Pro Max)",
+  //               "Production-volume label converting"
+  //             ],
+  //             brochureUrl: null,
+  //             sourceUrl: "https://www.sysform.tw/index.php/product/index/id/163.html"
+  //           }
+  //         ]
+  //       }
+  //     ]
+  //   }
 ];
 
 // Flat helper — every product with its category/subcategory context attached,

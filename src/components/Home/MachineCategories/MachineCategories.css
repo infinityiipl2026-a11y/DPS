@@ -9,7 +9,10 @@
 
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* SYSFORM: was repeat(4,1fr) for 8 categories (3 Yintech + 5 Sysform).
+     Only the 3 Yintech categories remain now, so 3 columns fills the row
+     evenly instead of leaving an empty 4th slot. */
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
@@ -47,7 +50,7 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 24px;
-  background: linear-gradient(to top, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.1) 60%, transparent 100%);
+  background: linear-gradient(to top, rgba(10, 44, 54, 0.85) 0%, rgba(10, 44, 54, 0.1) 60%, transparent 100%);
 }
 
 .category-overlay h3 {

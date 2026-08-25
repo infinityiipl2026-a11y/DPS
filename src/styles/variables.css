@@ -2,45 +2,47 @@
 
     /* ===========================
        BRAND COLORS
-       Deep graphite/ink for authority, a cool steel-blue for the brand,
-       and a warm copper accent (nods to press ink & machined metal)
-       instead of the default navy/orange combo.
+       Palette pulled directly from the Yintech mark: a deep teal-blue
+       for authority (their wordmark colour) and a confident red accent
+       (their checkmark colour) for CTAs — now that the showcase is
+       Yintech-only, the theme speaks the brand's own colours instead
+       of the old graphite/copper mix.
     =========================== */
 
-    --primary-color:#12181F;
-    --primary-color-soft:#1C2530;
-    --secondary-color:#2452A8;
-    --secondary-color-deep:#16336E;
-    --accent-color:#C9752A;
-    --accent-color-light:#E39355;
-    --accent-color-deep:#9C5A1C;
+    --primary-color:#0A2C36;
+    --primary-color-soft:#123F4C;
+    --secondary-color:#0E7C99;
+    --secondary-color-deep:#075F7F;
+    --accent-color:#D62839;
+    --accent-color-light:#E5525F;
+    --accent-color-deep:#A01620;
 
     /* ===========================
        BACKGROUND COLORS
     =========================== */
 
     --white:#FFFFFF;
-    --light-bg:#F5F6F8;
-    --light-bg-alt:#EFF1F4;
-    --dark-bg:#12181F;
-    --dark-bg-alt:#1A222C;
+    --light-bg:#F4F8F9;
+    --light-bg-alt:#EAF2F3;
+    --dark-bg:#0A2C36;
+    --dark-bg-alt:#123F4C;
 
     /* ===========================
        TEXT COLORS
     =========================== */
 
-    --heading-color:#12181F;
-    --text-color:#4A5361;
-    --light-text:#6B7480;
+    --heading-color:#0A2C36;
+    --text-color:#4A5B61;
+    --light-text:#66787E;
     --white-text:#FFFFFF;
-    --muted-on-dark:#A9B3C1;
+    --muted-on-dark:#A9CBD3;
 
     /* ===========================
        BORDER
     =========================== */
 
-    --border-color:#E4E7EC;
-    --border-color-strong:#D3D8E0;
+    --border-color:#DEE9EB;
+    --border-color-strong:#C7D9DC;
 
     /* ===========================
        BORDER RADIUS
@@ -53,15 +55,15 @@
 
     /* ===========================
        SHADOWS
-       Soft, low-chroma shadows tuned to the ink palette rather than pure black,
-       so cards feel machined rather than "default Bootstrap".
+       Soft, low-chroma shadows tuned to the deep-teal palette rather than
+       pure black, so cards feel machined rather than "default Bootstrap".
     =========================== */
 
-    --shadow-xs:0 1px 2px rgba(18,24,31,.06);
-    --shadow-sm:0 4px 14px rgba(18,24,31,.07);
-    --shadow-md:0 10px 30px rgba(18,24,31,.10);
-    --shadow-lg:0 24px 60px rgba(18,24,31,.16);
-    --shadow-accent:0 10px 24px rgba(201,117,42,.28);
+    --shadow-xs:0 1px 2px rgba(10,44,54,.06);
+    --shadow-sm:0 4px 14px rgba(10,44,54,.08);
+    --shadow-md:0 10px 30px rgba(10,44,54,.11);
+    --shadow-lg:0 24px 60px rgba(10,44,54,.18);
+    --shadow-accent:0 10px 24px rgba(214,40,57,.28);
 
     /* ===========================
        TRANSITION

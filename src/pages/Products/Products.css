@@ -295,7 +295,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-color-deep);
-  background: rgba(201, 117, 42, 0.1);
+  background: rgba(214, 40, 57, 0.1);
   padding: 5px 11px;
   border-radius: 5px;
   margin-bottom: 12px;
@@ -506,7 +506,7 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   color: var(--accent-color-deep);
-  background: rgba(201, 117, 42, 0.1);
+  background: rgba(214, 40, 57, 0.1);
   padding: 5px 12px;
   border-radius: 6px;
   margin-bottom: 14px;
