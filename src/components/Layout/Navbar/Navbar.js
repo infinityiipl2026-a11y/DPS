@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes, FaPhoneAlt, FaSearch, FaChevronDown } from "react-icons/fa";
 import { useScroll } from "../../../hooks/useScroll";
 import { productCatalog } from "../../../data/productsData";
@@ -9,9 +9,11 @@ import "./Navbar.css";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const [productsOpen, setProductsOpen] = useState(false);
   const scrolled = useScroll(60);
   const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   // Transparent-on-hero only applies on the Home page, at the very top of the page.
   const isHome = pathname === "/";
@@ -20,6 +22,21 @@ function Navbar() {
   const closeAllMenus = () => {
     setMenuOpen(false);
     setProductsOpen(false);
+    setSearchOpen(false);
+  };
+
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+    const trimmedQuery = searchQuery.trim();
+
+    if (!trimmedQuery) {
+      setSearchOpen(false);
+      return;
+    }
+
+    navigate(`/products?q=${encodeURIComponent(trimmedQuery)}`);
+    setSearchQuery("");
+    setSearchOpen(false);
   };
 
   return (
@@ -107,8 +124,14 @@ function Navbar() {
       {searchOpen && (
         <div className="search-bar">
           <div className="container">
-            <form onSubmit={(e) => e.preventDefault()}>
-              <input type="text" placeholder="Search machines, categories..." autoFocus />
+            <form onSubmit={handleSearchSubmit}>
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(event) => setSearchQuery(event.target.value)}
+                placeholder="Search machines, categories..."
+                autoFocus
+              />
               <button type="submit"><FaSearch /></button>
             </form>
           </div>

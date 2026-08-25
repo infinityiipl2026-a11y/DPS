@@ -83,16 +83,24 @@ function Contact() {
           </div>
 
           <div className="contact-map">
-            <iframe
-              title="Office Location"
-              src={COMPANY.mapEmbedUrl}
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            <a
+              href="https://maps.app.goo.gl/WYiPgzSbsTazkzcP7"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open office location in Google Maps"
+              style={{ display: "block", width: "100%", height: "100%" }}
+            >
+              <iframe
+                title="Office Location"
+                src={COMPANY.mapEmbedUrl}
+                width="100%"
+                height="100%"
+                style={{ border: 0, pointerEvents: "none" }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </a>
           </div>
         </div>
       </section>

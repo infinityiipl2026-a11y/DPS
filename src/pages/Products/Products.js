@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import "./Products.css";
 import SectionTitle from "../../components/UI/SectionTitle/SectionTitle";
@@ -10,6 +10,61 @@ function Products() {
   const [searchParams] = useSearchParams();
   const [activeMainCategory, setActiveMainCategory] = useState("printing-machines");
   const [activeSubCategory, setActiveSubCategory] = useState("dpm-series");
+
+  const searchQuery = useMemo(() => (searchParams.get("q") || "").trim().toLowerCase(), [searchParams]);
+
+  const filteredCatalog = useMemo(() => {
+    if (!searchQuery) return productCatalog;
+
+    return productCatalog
+      .map((category) => {
+        const categoryMatch = category.title.toLowerCase().includes(searchQuery);
+
+        if (categoryMatch) {
+          return { ...category, subcategories: category.subcategories };
+        }
+
+        const matchingSubcategories = category.subcategories
+          .map((subcategory) => {
+            const subcategoryMatch = subcategory.title.toLowerCase().includes(searchQuery);
+
+            if (subcategoryMatch) {
+              return subcategory;
+            }
+
+            const matchingProducts = subcategory.products.filter((product) => {
+              const searchableText = [
+                product.name,
+                product.model,
+                product.brand,
+                product.shortDescription,
+                product.description,
+                product.features.join(" "),
+                product.applications.join(" "),
+                ...product.specifications.map((spec) => `${spec.label} ${spec.value}`)
+              ]
+                .join(" ")
+                .toLowerCase();
+
+              return searchableText.includes(searchQuery);
+            });
+
+            if (matchingProducts.length === 0) {
+              return null;
+            }
+
+            return { ...subcategory, products: matchingProducts };
+          })
+          .filter(Boolean);
+
+        if (matchingSubcategories.length === 0) {
+          return null;
+        }
+
+        return { ...category, subcategories: matchingSubcategories };
+      })
+      .filter(Boolean);
+  }, [searchQuery]);
 
   // If the page was opened with ?category=...&sub=..., open that section
   // (e.g. from the homepage "View Machines" / "Explore Machines" links)
@@ -25,6 +80,11 @@ function Products() {
       setActiveSubCategory(subParam);
     }
 
+    if (searchQuery && filteredCatalog.length > 0) {
+      setActiveMainCategory(filteredCatalog[0].id);
+      setActiveSubCategory(filteredCatalog[0].subcategories[0]?.id || "");
+    }
+
     if (categoryParam || subParam) {
       const targetId = subParam || categoryParam;
       const scrollTimeout = setTimeout(() => {
@@ -35,7 +95,7 @@ function Products() {
       }, 150);
       return () => clearTimeout(scrollTimeout);
     }
-  }, [searchParams]);
+  }, [searchParams, searchQuery, filteredCatalog]);
 
   const handleMainToggle = (id) => {
     setActiveMainCategory((prev) => (prev === id ? "" : id));
@@ -57,10 +117,20 @@ function Products() {
 
       <section className="product-catalog-section">
         <div className="container">
-          <SectionTitle eyebrow="Product Catalog" title="Explore Our Equipment" align="left" />
+          <SectionTitle
+            eyebrow={searchQuery ? "Search Results" : "Product Catalog"}
+            title={searchQuery ? `Results for “${searchParams.get("q")?.trim()}”` : "Explore Our Equipment"}
+            align="left"
+          />
+
+          {searchQuery && filteredCatalog.length === 0 && (
+            <div className="search-empty-state">
+              <p>No machines matched your search for “{searchParams.get("q")?.trim()}”. Try another keyword such as Epson, Kyocera, or DPM.</p>
+            </div>
+          )}
 
           <div className="catalog-accordion-list">
-            {productCatalog.map((category) => {
+            {filteredCatalog.map((category) => {
               const isMainOpen = activeMainCategory === category.id;
               return (
                 <div className={`catalog-main-item ${isMainOpen ? "open" : ""}`} key={category.id} id={category.id}>
