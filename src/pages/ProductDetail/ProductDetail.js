@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { FaChevronRight, FaFileDownload, FaExternalLinkAlt } from "react-icons/fa";
+import { FaChevronRight, FaFileDownload } from "react-icons/fa";
 import Button from "../../components/UI/Button/Button";
 import { allProducts } from "../../data/productsData";
 import "./ProductDetail.css";

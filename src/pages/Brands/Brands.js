@@ -1,5 +1,8 @@
 import "./Brands.css";
-import { FaExternalLinkAlt, FaFileDownload } from "react-icons/fa";
+import {
+  FaExternalLinkAlt,
+  // other icons...
+} from "react-icons/fa";
 import SectionTitle from "../../components/UI/SectionTitle/SectionTitle";
 import Button from "../../components/UI/Button/Button";
 import { brands } from "../../data/brands";
