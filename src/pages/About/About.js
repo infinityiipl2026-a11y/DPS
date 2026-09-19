@@ -1,7 +1,6 @@
 import "./About.css";
 import { FaBullseye, FaEye, FaHistory } from "react-icons/fa";
 import SectionTitle from "../../components/UI/SectionTitle/SectionTitle";
-import { placeholderImage } from "../../utils/helpers";
 
 const journey = [
   { year: "30+", text: "Years of experience delivering trusted solutions to the printing industry." },
@@ -24,7 +23,7 @@ function About() {
       <section className="company-story">
         <div className="container story-grid">
           <div className="story-image">
-            <img src={placeholderImage("Company Story", 600, 460)} alt="Digital Print Solutions facility" />
+            <img src="/images/companystory.png" alt="Digital Print Solutions facility" />
           </div>
           <div className="story-content">
             <SectionTitle eyebrow="Our Story" title="Shaping the Future of Print" align="left" />

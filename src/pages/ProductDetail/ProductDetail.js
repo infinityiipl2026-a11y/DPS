@@ -86,11 +86,11 @@ function ProductDetail() {
                   <FaFileDownload /> Brochure
                 </Button>
               ) : null}
-              {product.sourceUrl ? (
+              {/* {product.sourceUrl ? (
                 <a href={product.sourceUrl} target="_blank" rel="noopener noreferrer" className="modal-source-link">
                   Manufacturer page <FaExternalLinkAlt size={11} />
                 </a>
-              ) : null}
+              ) : null} */}
             </div>
 
             <div className="product-detail-features">

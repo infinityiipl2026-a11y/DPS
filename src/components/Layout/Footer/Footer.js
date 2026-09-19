@@ -27,10 +27,10 @@ function Footer() {
             <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noreferrer">
               <FaLinkedinIn />
             </a>
-            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/digitalprintsolutions13/" aria-label="Instagram" target="_blank" rel="noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://youtube.com" aria-label="YouTube" target="_blank" rel="noreferrer">
+            <a href="https://youtube.com/@digitalprintsolutions13?si=gMRy4AO3RBiVq1do" aria-label="YouTube" target="_blank" rel="noreferrer">
               <FaYoutube />
             </a>
           </div>
@@ -77,10 +77,10 @@ function Footer() {
             </li>
           </ul>
 
-          <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
+          {/* <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
             <input type="email" placeholder="Your email address" required />
             <button type="submit">Subscribe</button>
-          </form>
+          </form> */}
         </div>
       </div>
 

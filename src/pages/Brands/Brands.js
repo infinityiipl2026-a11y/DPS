@@ -36,9 +36,9 @@ function Brands() {
                 <Button href={brand.website} variant="secondary">
                   Visit Website <FaExternalLinkAlt />
                 </Button>
-                <Button href="#" variant="outline">
+                {/* <Button href="#" variant="outline">
                   Download Brochure <FaFileDownload />
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>

@@ -52,7 +52,7 @@ function Contact() {
             <div>
               <h4>WhatsApp</h4>
               <a href={`https://wa.me/${COMPANY.whatsapp}`} target="_blank" rel="noreferrer">
-                Chat with us
+                +91 9920355333
               </a>
             </div>
           </div>
